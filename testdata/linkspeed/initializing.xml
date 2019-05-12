@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<s:Body>
+<u:GetCommonLinkPropertiesResponse xmlns:u="urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1">
+<NewWANAccessType>DSL</NewWANAccessType>
+<NewLayer1UpstreamMaxBitRate>0</NewLayer1UpstreamMaxBitRate>
+<NewLayer1DownstreamMaxBitRate>0</NewLayer1DownstreamMaxBitRate>
+<NewPhysicalLinkStatus>Initializing</NewPhysicalLinkStatus>
+</u:GetCommonLinkPropertiesResponse>
+</s:Body>
+</s:Envelope>
