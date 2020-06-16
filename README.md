@@ -1,7 +1,7 @@
 # go-fritzbox
 
 [![GoDoc][godoc-badge]][godoc]
-[![CircleCI](https://circleci.com/gh/digineo/go-fritzbox/tree/master.svg?style=shield)](https://circleci.com/gh/digineo/go-fritzbox/tree/master)
+[![Build Status](https://github.com/digineo/go-fritzbox/workflows/build/badge.svg?branch=master)](https://github.com/digineo/go-fritzbox/actions)
 [![Codecov](http://codecov.io/github/digineo/go-fritzbox/coverage.svg?branch=master)](http://codecov.io/github/digineo/go-fritzbox?branch=master)
 
 
