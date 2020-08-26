@@ -67,6 +67,7 @@ func (c *Client) request(rType requestType) (root *xmlpath.Node, err error) {
 	if err != nil {
 		return
 	}
+	defer resp.Body.Close()
 
 	// Check status code
 	if resp.StatusCode != http.StatusOK {
