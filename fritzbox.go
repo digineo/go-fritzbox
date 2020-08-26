@@ -47,7 +47,6 @@ func (c *Client) request(rType requestType) (root *xmlpath.Node, err error) {
 		uri,
 		bytes.NewBufferString(`<?xml version='1.0' encoding='utf-8'?><s:Envelope s:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' xmlns:s='http://schemas.xmlsoap.org/soap/envelope/'><s:Body>`+rType.soapBody+`</s:Body></s:Envelope>`),
 	)
-
 	if err != nil {
 		return
 	}
@@ -64,7 +63,6 @@ func (c *Client) request(rType requestType) (root *xmlpath.Node, err error) {
 	// Send request
 	client := &http.Client{Timeout: timeout}
 	resp, err := client.Do(req)
-
 	// Request failed?
 	if err != nil {
 		return

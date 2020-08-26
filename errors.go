@@ -10,5 +10,5 @@ type ResponseError struct {
 
 // Error returns a string representation
 func (err *ResponseError) Error() string {
-	return fmt.Sprintf("Unexpected status code %d for %s", err.StatusCode, err.URI)
+	return fmt.Sprintf("unexpected status code %d for %s", err.StatusCode, err.URI)
 }
