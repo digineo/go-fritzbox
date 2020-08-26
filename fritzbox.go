@@ -23,10 +23,10 @@ var (
 	faultDescription = xmlpath.MustCompile("/Envelope/Body/Fault//errorDescription")
 )
 
-// DefaultPort is the default UPNP port
+// DefaultPort is the default UPNP port.
 const DefaultPort = 49000
 
-// Client is a Fritzbox-Client
+// Client is a Fritzbox-Client.
 type Client struct {
 	Endpoint string
 	Context  context.Context // optional context for cancelation of outgoing requests
@@ -63,7 +63,6 @@ func (c *Client) request(rType requestType) (root *xmlpath.Node, err error) {
 	// Send request
 	client := &http.Client{Timeout: timeout}
 	resp, err := client.Do(req)
-	// Request failed?
 	if err != nil {
 		return
 	}
